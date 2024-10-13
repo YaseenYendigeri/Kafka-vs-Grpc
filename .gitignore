@@ -1,0 +1,11 @@
+service-1/.env
+service-1/node_modules
+service-1/package-lock.json
+service-1/src/config/config.json
+service-2/.env
+service-2/node_modules
+service-2/package-lock.json
+service-2/src/config/config.json
+
+
+

@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package location;
+
+// The request message containing the location data.
+message LocationData {
+  string tripId = 1;
+  repeated Location locations = 2;
+}
+
+// The location message.
+message Location {
+  double lat = 1;
+  double lng = 2;
+}
+
+// The response message.
+message UpdateResponse {
+  string status = 1;
+}
+
+// The service definition.
+service LocationService {
+  rpc UpdateLocations(LocationData) returns (UpdateResponse);
+}
