@@ -1,7 +1,6 @@
 # Kafka vs gRPC Performance Comparison for Inter-Service Communication
 
-This project demonstrates the difference in speed between Kafka and gRPC when sending large arrays of geopoints from a client service (Service 1) to a server service (Service 2), with the server storing these points in MongoDB.
-
+This POC compares Kafka and gRPC to find the faster method for seeding large arrays of geopoints into MongoDB.
 ## Project Structure
 
 - **Service 1 (Client)**: Generates a large array of arrays of geopoints and sends the data to Service 2.
